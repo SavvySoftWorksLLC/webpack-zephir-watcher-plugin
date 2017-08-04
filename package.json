@@ -11,5 +11,17 @@
   "devDependencies": {
     "glob": "^7.1.2",
     "underscore": "^1.8.3"
-  }
+  },
+  "dependencies": {
+    "glob": "^7.1.2",
+    "underscore": "^1.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavvySoftWorksLLC/webpack_zephir_watcher_plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SavvySoftWorksLLC/webpack_zephir_watcher_plugin/issues"
+  },
+  "homepage": "https://github.com/SavvySoftWorksLLC/webpack_zephir_watcher_plugin#readme"
 }
