@@ -1,5 +1,5 @@
 {
-  "name": "zephir_watcher_plugin",
+  "name": "zephir-watcher-plugin",
   "version": "0.1.0",
   "description": "tracks zephir modules in webpack",
   "main": "index.js",
