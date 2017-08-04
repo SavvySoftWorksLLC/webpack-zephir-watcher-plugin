@@ -1,7 +1,8 @@
 var _ = require('underscore');
 var glob = require('glob');
 var path = require('path')
-var cli = require('zephir-compile');
+
+var cli = require('./zephir-compile.js');
 
 function ZephirWatcherPlugin(options) {
   var util = {
