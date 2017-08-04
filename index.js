@@ -16,7 +16,7 @@ function ZephirWatcherPlugin(options) {
     basePath: function() { return options['basePath'] },
     unionPaths: function(currentFiles) { return _.union(currentFiles, this.globPaths()); },
     globPaths: function() {
-      var globPattern = __dirname + '/' + this.basePath() + "/**/*";
+      var globPattern = this.basePath() + "/**/*";
       var paths = glob.sync(globPattern);
       return paths;
     }
@@ -31,7 +31,6 @@ function ZephirWatcherPlugin(options) {
       compiler.plugin("watch-run", function(watching, done) {
         var files = Object.keys(watching.compiler.watchFileSystem.watcher.mtimes);
         var zepFiles = _.filter(files, function(file){
-            console.log(path.extname(file));
             if(util.extensions().indexOf(path.extname(file)) > -1){
                 return true;
             } else {
@@ -39,6 +38,7 @@ function ZephirWatcherPlugin(options) {
             }
         });
         if(zepFiles.length > 0) {
+            console.log(zepFiles[0]);
             cli.zephirCompile(done);
         }
         done();
