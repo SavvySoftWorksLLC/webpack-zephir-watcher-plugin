@@ -1,0 +1,15 @@
+{
+  "name": "zephir_watcher_plugin",
+  "version": "0.1.0",
+  "description": "tracks zephir modules in webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Scarrone <paul@savvysoftworks.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "glob": "^7.1.2",
+    "underscore": "^1.8.3"
+  }
+}
